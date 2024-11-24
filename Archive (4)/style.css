@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+}
+
+.poster-container {
+  position: relative;
+  width: 800px;
+  max-height: 100vh;
+  overflow-y: auto; /* Allows scrolling if content exceeds the screen height */
+}
+
+/* Poster Image */
+.poster-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Top Cast Names */
+.top-cast {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for cast names */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+/* Top Cast Names */
+.top-cast {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center; /* Align names horizontally */
+    gap: 30px; /* Space between each cast member */
+    font-size: 22px;
+    color: #84080846; /* Gold color for cast names */
+    text-shadow: 2px 2px 4px rgba(41, 8, 141, 0.999);
+  }
+  
+  /* Cast Member Block (first and last name) */
+  .cast-member {
+    display: flex;
+    flex-direction: row; /* Keep names horizontally */
+    align-items: center; /* Center names */
+  }
+  
+  /* First Name Styling */
+  .first-name {
+    font-size: 18px; /* Adjust size */
+    font-weight: bold;
+    color: rgb(23, 179, 168); /* White color for first names */
+    margin-right: 5px; /* Space between first and last names */
+    text-transform: capitalize; /* Ensure the first name is capitalized */
+  }
+  
+  /* Last Name Styling */
+  .last-name {
+    font-size: 22px; /* Adjust size */
+    font-weight: bold;
+    color: rgb(159, 109, 16); /* Orange color for last names */
+    font-family: 'Arial', sans-serif; /* Nice modern font for last names */
+    text-transform: uppercase; /* Capitalize last names */
+  }  
+/* Credits Section (Major Details) */
+.credits {
+    position: absolute; /* Absolute positioning within the container */
+    bottom: 0; /* Align it to the very bottom of the poster */
+    left: 50%;
+    transform: translateX(-50%); /* Center it horizontally */
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    width: 100%; /* Ensure it spans the full width */
+    padding-bottom: 20px; /* Add space from the bottom edge */
+  }
+  
+  /* Production House */
+  .production-house {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #FFD700; /* Gold color for prominence */
+  }
+  
+  /* Major Details */
+  .major-details {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #FFFFFF; /* White text for clarity */
+  }
+/* Film By Section */
+.film-by {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(153, 13, 13);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding-top: 50px; /* Move the section 50px down */
+  }
+  
+  /* Large Text for "A Film By" */
+  .film-by span.large {
+    font-size: 24px;
+    letter-spacing: 2px;
+    display: block;
+    padding-top: 100px;
+    font-weight: bold; /* Ensure the "A Film By" text is bold */
+    color: rgb(157, 123, 163); /* Change to orange color */
+  }
+  
+  /* Small Text for the Director's Name */
+  .film-by span.small {
+    font-size: 32px; /* Make the director's name bigger */
+    font-weight: bold; /* Bold the name */
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 5px;
+    color: rgb(111, 114, 89); /* Orange color for the director's name */
+    font-family: 'Arial', sans-serif; /* Use a nice bold font for the director's name */
+  }
+  
